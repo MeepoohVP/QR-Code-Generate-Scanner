@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Prompt', sans-serif;
+}
+section{
+    height: 50px;
+    background: #1A1A40;
+}
+.bigtopic{
+position: absolute;
+left: 0;
+right: 0;
+top: 6.25px;
+text-align: center;
+font-size: 35px;
+margin-top: -10px;
+}
+.bi-list{
+    
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.list{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+}
+.drop .bar{
+    right: 0;
+    right: -20%;
+    position: absolute;
+    width: 45px;
+    height: 100%;
+    background: #2E4C6D;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100% 100%;
+    z-index: -1;
+    transition: .3s;
+    padding-top: 5px;
+    color: #F2FFE9;
+    
+    
+}
+
+.drop.active .bar{
+    
+    transform: scale(1);
+    right: 0%;
+}
+
+
+.t1{
+    text-align: center;
+    cursor: pointer;
+}
+.t2{
+    text-align: center;
+    cursor: pointer;
+}
+.bar .n1:hover{
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+}
+.bar .n2:hover{
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+}
+.gener{ 
+    position: absolute;
+    text-align: center;
+    margin-left: -150px;
+    left: 50%;
+    
+    justify-content: center;
+}
+.qr-code img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+#input_text{
+    margin-top: 5px;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background: #ececec;
+    border-radius: 20px 0 0 20px;
+}
+.button{
+    width: 45px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0 20px 20px 0;
+    background: #C5D8A4;
+    vertical-align: middle;
+    transition: .3s;
+    margin-left: -7px;
+}
+.button img{
+    transition: .8s;
+}
+.button.active img{
+    transform: rotate(360deg);
+}
+.button:hover{
+    background: rgb(203, 168, 219);
+}
+.head-build{
+    padding-top: 10px;
+}
+.qr-code button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.qr-code button{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #FFD365;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 245px;
+    border-radius: 5px;
+    background-color: #FDCEB9;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:730px){
+    .bigtopic{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:500px){
+    .bigtopic{
+        font-size: 22px;
+    }
+}
+
+

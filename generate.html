@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulid.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <section><strong class="bigtopic" style="color: white;">QR-Code scan & generate</strong> 
+   <div class="drop" id="dropbar" onclick="togglePopup()"><button style="border: none;outline: none;background: none;cursor: pointer;color: white;" class="list"><i class="bi bi-list"></i></button> <div class="bar"><div class="t1">
+    <br><br><a href="#"><img src="qr-code (2).png" width="25px" height="25px" style="vertical-align: middle;" class="n1"></a></div>
+<div class="t2" style="padding-top: 10px;"><a href="scan.html"><img src="qr-code (3).png" width="25px" height="25px" style="vertical-align: middle;" class="n2"></a></div></div></div></section>
+
+<div class="gener">
+     <h2 class="head-build"> generate your QR-Code</h2>
+    <input type="text" name="input_text" id="input_text" autocomplete="off">
+    <button type="submit" class="button" id="button" onclick="rotateicon()"><img src="qr-code.png" alt="qrcode" width="25px" height="25px" style="vertical-align: middle;"></button>
+    <div class="qr-code" style="display: none;"><img src="qr-code.png" alt=""></div>
+    <div class="test"></div></div>
+    <script src="https://reeteshghimire.com.np/wp-content/uploads/2021/05/html5-qrcode.min_.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="test.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

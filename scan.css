@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Prompt', sans-serif;
+}
+section{
+    height: 50px;
+    background: #1A1A40;
+    z-index: 1;
+}
+strong{
+position: absolute;
+left: 0;
+right: 0;
+top: 6.25px;
+text-align: center;
+font-size: 35px;
+margin-top: -10px;
+}
+.bi-list{
+    
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.list{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    z-index: 2;
+}
+
+.drop .bar{
+    right: 0;
+    right: -20%;
+    position: absolute;
+    width: 45px;
+    height: 100%;
+    background: #2E4C6D;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100% 100%;
+    z-index: 0;
+    transition: .3s;
+    padding-top: 5px;
+    color: #F2FFE9;
+    
+    
+}
+
+
+.drop.active .bar{
+    
+    transform: scale(1);
+    right: 0%;
+}
+
+
+.t1{
+    text-align: center;
+    cursor: pointer;
+}
+.t2{
+    text-align: center;
+    cursor: pointer;
+}
+.bar .n1:hover{
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+}
+.bar .n2:hover{
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+}
+.scanner{
+    position: fixed;
+    text-align: center;
+    margin-left: -50%;
+    left: 50%;
+    justify-content: center;
+    top: 50%;
+}
+
+
+input[type="file"] {
+    display: none;
+    
+}
+
+canvas{
+    position: relative;
+    margin-top: 20px;
+    z-index: -1;
+}
+
+
+.custom-file-upload {
+    height: 80px;
+    font-size: 30px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: -200px;
+    position: fixed;
+    left: 55.75%;
+    margin-top: -40px;
+    top: 50%;
+    
+}
+.BTN{
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+:root{
+    --bigcolor: black;
+}
+.dark-theme{
+    --bigcolor: #fff;
+}
+@media screen and (max-width:730px){
+    strong{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:500px){
+    strong{
+        font-size: 22px;
+    }
+}

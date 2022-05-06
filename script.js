@@ -13,6 +13,12 @@ btn.addEventListener('click', () => {
         }
     }
     else{
+        Swal.fire({
+            title: 'ERROR!',
+            icon: 'error',
+            html: 'Please enter message',
+        }
+          )
         console.log("not valid input");
         qr_code_element.style = "display: none";
     }
@@ -48,8 +54,10 @@ function generate(user_input) {
         setTimeout(() => {
         download_link.setAttribute("href", `${qr_code_img.getAttribute("src")}`)
         }, 300)
+        
     }
 }
+
 
     
 

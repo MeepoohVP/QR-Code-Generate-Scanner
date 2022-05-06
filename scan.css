@@ -165,4 +165,11 @@ canvas{
     .buildbox{
         display: inline;
     }
+    .t1 ,.t2{
+        text-align: left;
+        padding-left: 10px;
+    }
+    section strong{
+        padding-top: 10px;
+    }
 }

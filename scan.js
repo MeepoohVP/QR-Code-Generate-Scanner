@@ -32,8 +32,14 @@ fileinput.addEventListener('change', e => {
    // alert(qrCodeMessage)
   })
   .catch(err => {
+    Swal.fire({
+      title: 'Scan Failed!',
+      icon: 'error',
+      html: 'QR-Code not found',
+  }
+    )
     // failure, handle it.
-    console.log(`Error scanning file. Reason: ${err}`)
+    console.error(`Error scanning file. Reason: ${err}`)
   });
 });
 html5QrCode.clear();

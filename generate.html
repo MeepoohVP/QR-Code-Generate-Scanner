@@ -12,13 +12,13 @@
 <body>
     <section><strong class="bigtopic" style="color: white;">QR-Code scan & generate</strong> 
    <div class="drop" id="dropbar" onclick="togglePopup()"><button style="border: none;outline: none;background: none;cursor: pointer;color: white;" class="list"><i class="bi bi-list"></i></button> <div class="bar"><div class="t1">
-    <br><br><a href="#"><img src="qr-code (2).png" width="25px" height="25px" style="vertical-align: middle;" class="n1"><span class="buildbox" style="text-decoration: none;color: white;"> Generate</span></a></div>
-<div class="t2" style="padding-top: 10px;"><a href="scan.html"><img src="qr-code (3).png" width="25px" height="25px" style="vertical-align: middle;" class="n2"><span class="buildbox" style="text-decoration: none;color: white;"> Scan</span></a></div></div></div></section>
+    <br><br><a href="#" title="generate QR-Code"><img src="qr-code (2).png" width="25px" height="25px" style="vertical-align: middle;" class="n1"><span class="buildbox" style="text-decoration: none;color: white;padding-right: 70%;"> Generate</span></a></div>
+<div class="t2" style="padding-top: 10px;"><a href="scan.html" title="Scan QR-Code"><img src="qr-code (3).png" width="25px" height="25px" style="vertical-align: middle;" class="n2"><span class="buildbox" style="text-decoration: none;color: white;padding-right: 75%;"> Scan</span></a></div></div></div></section>
 
 <div class="gener">
      <h2 class="head-build"> generate your QR-Code</h2>
-    <input type="text" name="input_text" id="input_text" autocomplete="off">
-    <button type="submit" class="button" id="button" onclick="rotateicon()"><img src="qr-code.png" alt="qrcode" width="25px" height="25px" style="vertical-align: middle;"></button>
+    <input type="text" name="input_text" id="input_text" autocomplete="off" placeholder="Input message here." autofocus>
+    <button type="submit" class="button" id="button" onclick="rotateicon()" title="Generate"><img src="qr-code.png" alt="qrcode" width="25px" height="25px" style="vertical-align: middle;"></button>
     <div class="qr-code" style="display: none;"><img src="qr-code.png" alt=""></div>
     <div class="test"></div></div>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

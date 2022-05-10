@@ -36,6 +36,7 @@ function generate(user_input) {
     });
     let download = document.createElement("button");
     qr_code_element.appendChild(download);
+    download.title = "Download PNG";
 
     let download_link = document.createElement("a");
     download_link.setAttribute("download", "qr_code.png");
